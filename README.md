@@ -7,3 +7,9 @@ create_tables.py is used to create two tables for the database, log and workout.
 of the workout (moves, sets, reps, weight...)
 
 insert_data.py is used to insert workouts into the database.
+
+Test:
+.header on
+.mode column
+
+SELECT * FROM logs;
