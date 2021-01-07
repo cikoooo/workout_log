@@ -9,8 +9,23 @@ of the workout (moves, sets, reps, weight...)
 insert_data.py is used to insert workouts into the database.
 
 Test:
-Access SQL??? (cmd -> sqlite3 workout.db, should work but nope...)
-.header on
-.mode column
+    THIS IF NOT STARTED BY ANACONDA
+    '''
+    SQLITE3 in \anaconda3\Library\bin
+    from there .\sqlite3 and ".open c:\\users\\Nico\\Documents\\tty\\ohjelmointi\\workout_log\\workout.db"
+    '''
 
-SELECT * FROM logs;
+    Easier with anaconda:
+    sqlite3 workout.db
+
+    check tables:
+    .tables
+
+    styling, optional:
+    {
+    .header on
+    .mode column
+    }
+
+    And see all the logs:
+    SELECT * FROM logs;
