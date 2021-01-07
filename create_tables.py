@@ -64,6 +64,7 @@ def main():
     if conn is not None:
         create_table(conn, sql_create_logs_table)
         create_table(conn, sql_create_workout_table)
+        print('Tables created')
 
     else:
         print("Error! Cannot create database connection.")

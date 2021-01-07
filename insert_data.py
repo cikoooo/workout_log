@@ -64,10 +64,34 @@ def main():
         log = (date, workout)
         log_id = create_log(conn, log)
 
+        # TODO tämä kaikki omaksi funktioksi? Näyttäisi paremmalta
+        move = input('Insert move: ')
+                
+        try:
+            sets = int(input('Insert sets: '))
+        except ValueError:
+            sets = int(input('Insert sets (integer): '))
+
+        try:
+            reps = int(input('Insert reps: '))
+        except ValueError:
+            reps = int(input('Insert reps (integer): '))
+
+        try:
+            weight = float(input('Insert weight: '))
+        except ValueError:
+            weight = float(input('Insert weight (float): '))
+
+        extra = input('More info?: ')
+
+        workout = (log_id, workout, move, sets, reps, weight, extra)
+        create_workout(conn, workout)
+        workout = ''
+
         #Create new workouts
         while True:
             add_workout = input('Add another move? (Y/N): ')
-            if add_workout == 'Y':
+            if add_workout in ['Y', 'y']:
                 move = input('Insert move: ')
                 
                 try:
@@ -91,7 +115,7 @@ def main():
                 create_workout(conn, workout)
                 workout = ''
 
-            elif add_workout == 'N':
+            elif add_workout in ['N', 'n']:
                 print("Logging workout...")
                 break
 
