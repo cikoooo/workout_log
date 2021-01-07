@@ -38,8 +38,8 @@ def create_table(conn, create_table_sql):
         print(e)
 
 def main():
-    database = r"C:\Users\Nico\Documents\tty\ohjelmointi\workout_log\workout.db"
-
+    database = "workout.db"
+    
     sql_create_logs_table = '''CREATE TABLE IF NOT EXISTS logs (
                                     id integer PRIMARY KEY,
                                     date DATE NOT NULL,

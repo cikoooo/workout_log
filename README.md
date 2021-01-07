@@ -9,6 +9,7 @@ of the workout (moves, sets, reps, weight...)
 insert_data.py is used to insert workouts into the database.
 
 Test:
+Access SQL (cmd -> sqlite3 workout.db)
 .header on
 .mode column
 

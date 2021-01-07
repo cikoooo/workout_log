@@ -54,8 +54,8 @@ def create_workout(conn, workout):
     return cur.lastrowid
 
 def main():
-    database = r"C:\Users\Nico\Documents\tty\ohjelmointi\workout_log\workout.db"
-
+    database = "workout.db"
+    
     conn = create_connection(database) #Create a connection to the database
     with conn:
         #Create a new log

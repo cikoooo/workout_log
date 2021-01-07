@@ -18,4 +18,4 @@ def create_connection(db_file):
             conn.close()
 
 if __name__ == '__main__':
-    create_connection(r"C:\Users\Nico\Documents\tty\ohjelmointi\workout_log\workout.db")
+    create_connection("workout.db")
