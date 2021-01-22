@@ -15,10 +15,10 @@ insert_data.py is used to insert workouts into the database.
 
 Test:
     THIS IF NOT STARTED BY ANACONDA
-    '''
+    `
     SQLITE3 in \anaconda3\Library\bin
     from there .\sqlite3 and ".open c:\\users\\Nico\\Documents\\tty\\ohjelmointi\\workout_log\\workout.db"
-    '''
+    `
 
     Easier with anaconda:
     sqlite3 workout.db
