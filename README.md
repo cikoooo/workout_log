@@ -22,7 +22,8 @@ insert_data.py is used to insert workouts into the database.
     from there .\sqlite3 and ".open c:\\users\\Nico\\Documents\\tty\\ohjelmointi\\workout_log\\workout.db"
     `
 
-    Easier with anaconda:
+### Easier with anaconda:
+    
     sqlite3 workout.db
 
     check tables:
