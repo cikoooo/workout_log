@@ -1,5 +1,5 @@
 # workout_log
-Just a little project I made. I wanted to exercise how to create a database utilizing SQLite3 and Python.
+### Just a little project I made. I wanted to exercise how to create a database utilizing SQLite3 and Python.
 
 create_db.py is used to create database.
 
@@ -13,8 +13,10 @@ Tables contain following:
 
 insert_data.py is used to insert workouts into the database.
 
-Test:
-    THIS IF NOT STARTED BY ANACONDA
+## Test:
+
+### THIS IF NOT STARTED BY ANACONDA
+
     `
     SQLITE3 in \anaconda3\Library\bin
     from there .\sqlite3 and ".open c:\\users\\Nico\\Documents\\tty\\ohjelmointi\\workout_log\\workout.db"
