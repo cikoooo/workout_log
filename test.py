@@ -5,6 +5,7 @@ Pandas works nicely with sqlite
 import pandas as pd
 import sqlite3
 import matplotlib.pyplot as plt
+from insert_data import *
 
 conn = sqlite3.connect('workout.db')
 test = pd.read_sql('SELECT * FROM gym', conn)
@@ -15,6 +16,8 @@ paino = paino[:len(paiva)]
 
 plt.plot(paiva, paino)
 plt.show()
+
+# insert_data() #tämä käynnistää insert_data:n
 
 '''
 Alkeellinen testi.

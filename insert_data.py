@@ -267,7 +267,7 @@ def add_other(conn, log_id):
             break
 
 
-def main():
+def insert_data():
     database = "workout.db"
     
     conn = create_connection(database) #Create a connection to the database
@@ -300,4 +300,4 @@ def main():
             print('Logging out')
 
 if __name__ == '__main__':
-    main()
+    insert_data()
